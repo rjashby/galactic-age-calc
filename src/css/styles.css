@@ -2,3 +2,7 @@ body {
   background-color: rgb(15, 15, 160);
   color: beige;
 }
+
+#output {
+  display: none;
+}
