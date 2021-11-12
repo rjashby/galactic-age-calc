@@ -24,11 +24,13 @@ _This application will first ask the user to input their age, gender, and planet
 
 ## Setup/Installation Requirements
 
-* _Click the green "Code" button and Download Zip _
-* _Extract the contents of the zip file to a folder on your machine_
-* _Run the Index.html file with your browser of choice (I recommend Chrome)_
-
-* _alternatively you can [clone this repository](https://www.learnhowtoprogram.com/introduction-to-programming/git-html-and-css/practice-github-remote-repositories) from Git Hub_
+* _In order to utilize this page, you will need to clone a copy of this repository to your workspace using the "$ git clone https://github.com/rjashby/galactic-age-calc" in your coding terminal._
+* _Conversely, you can download the files in a zip folder by click the green "Code" button, and choosing "download ZIP." Then extract the contents of the zip file to a folder on your machine_ 
+* _Once retrieved you will need software to edit or further contribute to the code. You can download the free code editor, VS Code, at https://code.visualstudio.com/_.
+* _You can now open each of the individual files and edit them as you see fit on VS Code._
+* _Once installed, you will need to run the command "npm install" in your terminal to download the appropriate node modules._
+* _To open the application locally, simply go to the folder/directory to which you saved the project, and open the index.html file in your browser._
+* _To run a server view of the project, you can type the command "npm run start" to witness and inspect any changes in real time_
 
 
 ## Known Bugs
