@@ -39,7 +39,7 @@ describe("Person", () => {
     expect(person1.leftToLive()).toEqual(54.1);
   });
 
-  test("should correctly determine how many martian years are left in a male person's life", () => {
+  test("should correctly determine how many mercurian years are left in a male person's life", () => {
     const person1 = new Person(43, "male", "mercury")
     expect(person1.leftToLive()).toEqual(133.7);
   });
@@ -47,5 +47,10 @@ describe("Person", () => {
   test("should correctly determine how many venusian years are left in a male person's life", () => {
     const person1 = new Person(13, "male", "venus")
     expect(person1.leftToLive()).toEqual(100.2);
+  });
+
+  test("should correctly determine how many martian years are left in a male person's life", () => {
+    const person1 = new Person(39, "male", "mars")
+    expect(person1.leftToLive()).toEqual(19.2);
   });
 })
