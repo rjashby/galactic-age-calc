@@ -53,4 +53,9 @@ describe("Person", () => {
     const person1 = new Person(39, "male", "mars")
     expect(person1.leftToLive()).toEqual(19.2);
   });
+
+  test("should correctly determine how many jovian years are left in a male person's life", () => {
+    const person1 = new Person(54, "male", "jupiter")
+    expect(person1.leftToLive()).toEqual(1.8);
+  });
 })
