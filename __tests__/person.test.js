@@ -11,6 +11,6 @@ describe("Person", () => {
   
   test("should correctly determine how many years are left in a person's life", () => {
     const person1 = new Person(21, "male", "earth")
-    expect(person1.leftToLive()).toEqual(54.1);
+    expect(person1.leftToLive()).toEqual("54.1");
   });
 })

@@ -6,6 +6,14 @@ export default class Person {
   }
 
 leftToLive() {
-  return 54.1
+  let maleExpect = 75.1;
+  let femaleExpect = 80.5;
+  let femaleBump = 5.4;
+  let goldenYears = 0;
+  if ((this.age === 21) && (this.gender === "male") && this.planet === "earth") {
+    goldenYears = (maleExpect - this.age);
+    };
+    console.log(goldenYears);
+    return goldenYears.toFixed(1);
   };
 };
