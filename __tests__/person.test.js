@@ -8,4 +8,9 @@ describe("Person", () => {
     expect(person1.gender).toEqual("male");
     expect(person1.planet).toEqual("earth");
   });
+  
+  test("should correctly determine how many years are left in a person's life", () => {
+    const person1 = new Person(21, "male", "earth")
+    expect(person1.leftToLive()).toEqual(54.1);
+  });
 })
