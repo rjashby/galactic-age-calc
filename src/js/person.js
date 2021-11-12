@@ -35,5 +35,9 @@ leftToLive() {
       yourAgeResult = (this.age / 1.88)
       return parseFloat(yourAgeResult.toFixed(1));
     }
+    if (this.planet === "jupiter") {
+      yourAgeResult = (this.age / 11.86)
+      return parseFloat(yourAgeResult.toFixed(1));
+    }
   };
 };
