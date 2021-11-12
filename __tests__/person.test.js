@@ -26,6 +26,6 @@ describe("Person", () => {
 
   test("should return a different number, taking inputted age and calculating years of age based on planet venus", () => {
     const person1 = new Person(64, "male", "venus")
-    expect(person1.planetChuFrom()).toEqual();
+    expect(person1.planetChuFrom()).toEqual("103.2");
   });
 })
