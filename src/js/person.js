@@ -18,7 +18,7 @@ leftToLive() {
   };
 
   planetChuFrom () {
-  
+  return "24.0"
   }
   
 };
