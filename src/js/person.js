@@ -27,6 +27,9 @@ leftToLive() {
       yourAgeResult = (this.age / .24)
     return yourAgeResult.toFixed(1);
     }
-
+    if (this.planet === "venus") {
+      yourAgeResult = (this.age / .62)
+    return yourAgeResult.toFixed(1);
+    }
   };
 };
