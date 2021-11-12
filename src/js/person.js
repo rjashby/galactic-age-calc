@@ -21,8 +21,12 @@ leftToLive() {
     let yourAgeResult = 0
     if (this.planet === "earth") {
       yourAgeResult = (this.age * 1)
+      return yourAgeResult.toFixed(1);
     } 
-    return yourAgeResult;
-  }
-};
+    if (this.planet === "mercury") {
+      yourAgeResult = (this.age / .24)
+    return yourAgeResult.toFixed(1);
+    }
 
+  };
+};
