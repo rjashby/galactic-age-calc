@@ -21,7 +21,7 @@ leftToLive() {
     let yourAgeResult = 0
     if (this.planet === "earth") {
       yourAgeResult = (this.age * 1)
-    }
+    } 
     return yourAgeResult;
   }
 };

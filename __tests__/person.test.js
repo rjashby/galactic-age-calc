@@ -14,8 +14,13 @@ describe("Person", () => {
     expect(person1.leftToLive()).toEqual("54.1");
   });
 
-  test("should return a number, showing years lived on a planet based upon a person's inputted age and planet", () => {
+  test("should return a number, showing years lived on a planet based upon a person's inputted age and planet earth", () => {
     const person1 = new Person(24, "male", "earth")
     expect(person1.planetChuFrom()).toEqual(24);
+  });
+
+  test("should return a different number, taking inputted age and calculating years of age based on planet mercury", () => {
+    const person1 = new Person(24, "male", "mercury")
+    expect(person1.planetChuFrom()).toEqual(100);
   });
 })
