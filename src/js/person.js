@@ -38,6 +38,9 @@ export default class Person {
       goldenYears = (maleExpect - this.age);
       return parseFloat(goldenYears.toFixed(1));
     };
-     
+    if ((this.gender === "male") && this.planet === "mercury") {
+      goldenYears = ((maleExpect - this.age)/(.24));
+      return parseFloat(goldenYears.toFixed(1));
+    }; 
   };
 };
