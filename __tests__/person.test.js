@@ -8,11 +8,6 @@ describe("Person", () => {
     expect(person1.gender).toEqual("male");
     expect(person1.planet).toEqual("earth");
   });
-  
-  test("should correctly determine how many years are left in a person's life", () => {
-    const person1 = new Person(21, "male", "earth")
-    expect(person1.leftToLive()).toEqual("54.1");
-  });
 
   test("should return a number, showing years lived on a planet based upon a person's inputted age and planet earth", () => {
     const person1 = new Person(24, "male", "earth")
@@ -37,5 +32,10 @@ describe("Person", () => {
   test("should return a different number, taking inputted age and calculating years of age based on planet jupiter", () => {
     const person1 = new Person(37, "male", "jupiter")
     expect(person1.planetChuFrom()).toEqual(3.1);
+  });
+
+  test("should correctly determine how many years are left in a male person's life", () => {
+    const person1 = new Person(21, "male", "earth")
+    expect(person1.leftToLive()).toEqual(54.1);
   });
 })

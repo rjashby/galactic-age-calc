@@ -5,18 +5,6 @@ export default class Person {
     this.planet = planet
   }
 
-leftToLive() {
-  let maleExpect = 75.1;
-  let femaleExpect = 80.5;
-  let femaleBump = 5.4;
-  let goldenYears = 0;
-  if ((this.age === 21) && (this.gender === "male") && this.planet === "earth") {
-    goldenYears = (maleExpect - this.age);
-    };
-    console.log(goldenYears);
-    return goldenYears.toFixed(1);
-  };
-
   planetChuFrom () {
     let yourAgeResult = 0
     if (this.planet === "earth") {
@@ -39,5 +27,17 @@ leftToLive() {
       yourAgeResult = (this.age / 11.86)
       return parseFloat(yourAgeResult.toFixed(1));
     }
+  };
+
+  leftToLive() {
+    let maleExpect = 75.1;
+    let femaleExpect = 80.5;
+    let femaleBump = 5.4;
+    let goldenYears = 0;
+    if ((this.age === 21) && (this.gender === "male") && this.planet === "earth") {
+      goldenYears = (maleExpect - this.age);
+      };
+      console.log(goldenYears);
+      return parseFloat(goldenYears.toFixed(1));
   };
 };
