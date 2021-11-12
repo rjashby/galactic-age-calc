@@ -16,4 +16,10 @@ leftToLive() {
     console.log(goldenYears);
     return goldenYears.toFixed(1);
   };
+
+  planetChuFrom () {
+  
+  }
+  
 };
+
