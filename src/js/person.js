@@ -34,10 +34,10 @@ export default class Person {
     let femaleExpect = 80.5;
     let femaleBump = 5.4;
     let goldenYears = 0;
-    if ((this.age === 21) && (this.gender === "male") && this.planet === "earth") {
+    if ((this.gender === "male") && this.planet === "earth") {
       goldenYears = (maleExpect - this.age);
-      };
-      console.log(goldenYears);
       return parseFloat(goldenYears.toFixed(1));
+    };
+     
   };
 };

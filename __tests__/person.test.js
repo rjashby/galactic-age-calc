@@ -34,8 +34,13 @@ describe("Person", () => {
     expect(person1.planetChuFrom()).toEqual(3.1);
   });
 
-  test("should correctly determine how many years are left in a male person's life", () => {
+  test("should correctly determine how many earth years are left in a male person's life", () => {
     const person1 = new Person(21, "male", "earth")
     expect(person1.leftToLive()).toEqual(54.1);
+  });
+
+  test("should correctly determine how many mars years are left in a male person's life", () => {
+    const person1 = new Person(43, "male", "mercury")
+    expect(person1.leftToLive()).toEqual(133.7);
   });
 })
