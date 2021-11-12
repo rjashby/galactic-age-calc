@@ -43,18 +43,30 @@ export default class Person {
     };
     if ((this.gender === "male") && this.planet === "mercury") {
       goldenYears = ((maleExpect - this.age)/(.24));
+      if (Math.sign(goldenYears) === (-1)) {
+        return ("Congratulations! You've lived " + (goldenYears.toFixed(1) * (-1)) + " years past your life expectancy. You go girl!")
+      } else
       return parseFloat(goldenYears.toFixed(1));
     }; 
     if ((this.gender === "male") && this.planet === "venus") {
       goldenYears = ((maleExpect - this.age)/(.62));
+      if (Math.sign(goldenYears) === (-1)) {
+        return ("Congratulations! You've lived " + (goldenYears.toFixed(1) * (-1)) + " years past your life expectancy. You go girl!")
+      } else
       return parseFloat(goldenYears.toFixed(1));
     }; 
     if ((this.gender === "male") && this.planet === "mars") {
       goldenYears = ((maleExpect - this.age)/(1.88));
+      if (Math.sign(goldenYears) === (-1)) {
+        return ("Congratulations! You've lived " + (goldenYears.toFixed(1) * (-1)) + " years past your life expectancy. You go girl!")
+      } else
       return parseFloat(goldenYears.toFixed(1));
     }; 
     if ((this.gender === "male") && this.planet === "jupiter") {
       goldenYears = ((maleExpect - this.age)/(11.86));
+      if (Math.sign(goldenYears) === (-1)) {
+        return ("Congratulations! You've lived " + (goldenYears.toFixed(1) * (-1)) + " years past your life expectancy. You go girl!")
+      } else
       return parseFloat(goldenYears.toFixed(1));
     }; 
   };
