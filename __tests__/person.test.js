@@ -46,6 +46,6 @@ describe("Person", () => {
 
   test("should correctly determine how many venusian years are left in a male person's life", () => {
     const person1 = new Person(13, "male", "venus")
-    expect(person1.leftToLive()).toEqual(90.4);
+    expect(person1.leftToLive()).toEqual(100.2);
   });
 })
