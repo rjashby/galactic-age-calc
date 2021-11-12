@@ -58,4 +58,9 @@ describe("Person", () => {
     const person1 = new Person(54, "male", "jupiter")
     expect(person1.leftToLive()).toEqual(1.8);
   });
+
+  test("if a negative life expectancy is reached, it should it should return 'Congratulations! You've lived X years past your life expectancy. You go girl!'", () => {
+    const person1 = new Person(99, "male", "earth")
+    expect(person1.leftToLive()).toEqual("Congratulations! You've lived 23.9 years past your life expectancy. You go girl!");
+  });
 })
