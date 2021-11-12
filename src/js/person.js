@@ -36,7 +36,9 @@ export default class Person {
     
     if ((this.gender === "male") && this.planet === "earth") {
       goldenYears = (maleExpect - this.age);
-      
+      if (Math.sign(goldenYears) === (-1)) {
+        return ("Congratulations! You've lived " + (goldenYears.toFixed(1) * (-1)) + " years past your life expectancy. You go girl!")
+      } else
       return parseFloat(goldenYears.toFixed(1));
     };
     if ((this.gender === "male") && this.planet === "mercury") {
