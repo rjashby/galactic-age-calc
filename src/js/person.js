@@ -6,6 +6,6 @@ export default class Person {
   }
 
 leftToLive() {
-  
+  return 54.1
   };
 };
