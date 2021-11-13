@@ -8,14 +8,14 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname,'dist')
   },
-  devtool: 'eval-sorurce-map',
+  devtool: 'eval-source-map',
   devServer: {
     contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'JustPleaseWork',
+      title: 'Galactic Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
