@@ -35,7 +35,8 @@ _This application will first ask the user to input their age, gender, and planet
 
 ## Known Bugs
 
-* _No Known Bugs_
+* _User Interface Currently Inactive_
+* _npm run build won't compile_
 
 ## License
 
